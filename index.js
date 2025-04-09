@@ -42,5 +42,6 @@ function yoobtoob() {
 }
 
 function projects() {
-  window.open("https://somethingoriginal.glitch.me/projects.html")
+  //  window.open("https://somethingoriginal.glitch.me/projects.html")
+  location.href("noltails6.github.io/projects"
 }
