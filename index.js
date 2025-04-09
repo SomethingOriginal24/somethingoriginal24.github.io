@@ -38,10 +38,10 @@ filer.forEach((f) => {
 
  
 function yoobtoob() {
-  window.open("https://www.youtube.com/@somethingoriginal987")
+  location.replace("https://www.youtube.com/@somethingoriginal987")
 }
 
 function projects() {
   //  window.open("https://somethingoriginal.glitch.me/projects.html")
-  location.href("somethingoriginal24.github.io/projects")
+  location.replace("somethingoriginal24.github.io/projects")
 }
