@@ -29,5 +29,5 @@ function jarvisbot() {
 }
 
 function github() {
-  window.open("https://github.com/noltails6")
+  window.open("https://github.com/somethingoriginal24")
 }
