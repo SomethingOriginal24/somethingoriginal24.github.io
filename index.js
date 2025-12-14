@@ -7,7 +7,7 @@
 console.log("oooo developer console so coool :)");
 const buttoncount = 0;
 
-const motwth_url = 'https://raw.githubusercontent.com/SomethingOriginal24/somethingoriginal24.github.io/motwth.txt'; 
+const motwth_url = 'https://raw.githubusercontent.com/SomethingOriginal24/somethingoriginal24.github.io/refs/heads/main/motwth.txt'; 
 const motdContainer = document.getElementById('motd-container');
 const btn = document.querySelector("button"); // Get the button from the page
 
