@@ -7,6 +7,8 @@
 console.log("oooo developer console so coool :)");
 const buttoncount = 0;
 
+const motwth_url = 'https://raw.githubusercontent.com/SomethingOriginal24/somethingoriginal24.github.io/motwth.txt'; 
+const motdContainer = document.getElementById('motd-container');
 const btn = document.querySelector("button"); // Get the button from the page
 
 setTimeout(fixYoutube1, 3000);
@@ -45,3 +47,21 @@ function projects() {
   //  window.open("https://somethingoriginal.glitch.me/projects.html")
   location.replace("/projects/index.html")
 }
+
+function fetchMessageOfTheDay() {
+    fetch(GITHUB_RAW_URL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`it broke (status: ${response.status})`);
+            }
+            return response.text(); 
+        })
+        .then(data => {
+            motdContainer.textContent = data.trim(); 
+        })
+        .catch(error => {
+            console.error('it broke', error);
+            motdContainer.textContent = 'something broke, try reloading maybe';
+        });
+}
+fetchMessageOfTheDay();
