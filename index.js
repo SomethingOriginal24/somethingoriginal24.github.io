@@ -49,7 +49,7 @@ function projects() {
 }
 
 function fetchMessageOfTheDay() {
-    fetch(GITHUB_RAW_URL)
+    fetch(motwth_url)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`it broke (status: ${response.status})`);
